@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_butto"
+            android:icon="@drawable/ic_trash_can"
+            android:title="@string/dove_lo_butto" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_pericolosi"
+            android:title="@string/rifiuti_pericolosi" />
+        <item
+            android:id="@+id/nav_spedizioni"
+            android:icon="@drawable/ic_calendar"
+            android:title="@string/spedizioni" />
+        <item
+            android:id="@+id/nav_impostazioni"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/impostazioni" />
+        <item
+            android:id="@+id/nav_contatti"
+            android:title="@string/contatti" />
+        <item
+            android:id="@+id/nav_facebook"
+            android:title=""
+            android:icon="@drawable/ic_facebook" />
+        <item
+            android:id="@+id/nav_instagram"
+            android:icon="@drawable/ic_instagram"
+            android:title="" />
+
     </group>
 </menu>
