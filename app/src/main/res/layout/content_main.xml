@@ -7,14 +7,165 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:padding="20dp"
+            android:text="Aiutaci a mantenere Genova ancora più Green!"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/custom_button"
+            android:layout_marginBottom="20dp" >
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="98dp"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:text="Dove lo butto?"
+                android:textColor="#FFFFFF"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="SCOPRI"
+                android:textColor="#ffffffff"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/custom_button"
+            android:layout_marginBottom="20dp" >
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="98dp"
+                android:src="@drawable/ic_baseline_delete_forever_24"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="15dp"
+                android:text="Rifuiti pericolosi"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="SCOPRI"
+                android:textColor="#ffffffff"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/custom_button"
+            android:layout_marginBottom="20dp" >
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="98dp"
+                android:src="@drawable/ic_baseline_image_search_24"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="monospace"
+                android:padding="15dp"
+                android:text="Spedizioni"
+                android:textColor="#FFFFFF"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="SCOPRI"
+                android:textColor="#ffffffff"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:text="Aiutaci a mantenere Genova"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
