@@ -7,29 +7,43 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#25D366"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="100sp"
-            android:background="#25d366"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="match_parent">
 
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_menu"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="265dp"
+                android:layout_height="84dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:text="@string/genovagreen"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="43sp"
+                android:textStyle="bold"
+                app:layout_anchorGravity="center" />
+</RelativeLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
     <include
         layout="@layout/content_main"
-        android:layout_height="655dp"/>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_width="match_parent"
+        android:layout_height="657dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
