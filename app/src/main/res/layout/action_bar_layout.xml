@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_gravity="center"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    tools:visibility="visible"
+    android:background="@color/colorPrimary">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/navTitle"
-        android:gravity="center"
-        android:text="GenovaGreens"
-        android:fontFamily="sans-serif"
-        android:textColor="#fff"
-        android:textStyle="bold"
-        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+    <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:onClick="ClickMenu"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:src="@drawable/ic_menu" />
 
-    </androidx.appcompat.widget.AppCompatTextView>
-
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="GenovaGreen"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

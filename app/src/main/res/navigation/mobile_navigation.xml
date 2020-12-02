@@ -3,41 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/home2">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.genovagreen.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home">
-
+        android:id="@+id/dove_lo_butto"
+        android:name="com.example.genovagreen.dove_lo_butto"
+        android:label="fragment_dove_lo_butto"
+        tools:layout="@layout/fragment_dove_lo_butto" />
+    <fragment
+        android:id="@+id/spedizioni"
+        android:name="com.example.genovagreen.spedizioni"
+        android:label="fragment_spedizioni"
+        tools:layout="@layout/fragment_spedizioni" />
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.genovagreen.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-            app:destination="@id/nav_home_second" />
-    </fragment>
-    <fragment
-        android:id="@+id/nav_home_second"
-        android:name="com.example.genovagreen.ui.home.HomeSecondFragment"
-        android:label="@string/home_second"
-        tools:layout="@layout/fragment_home_second">
+            android:id="@+id/GoToDoveLoButto"
+            app:destination="@id/dove_lo_butto" />
         <action
-            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-            app:destination="@id/nav_home" />
-
-        <argument
-            android:name="myArg"
-            app:argType="string" />
+            android:id="@+id/GoToSpedizioni"
+            app:destination="@id/spedizioni" />
     </fragment>
 
-    <fragment
-        android:id="@+id/nav_spedizioni"
-        android:name="com.example.genovagreen.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_butto"
-        android:name="com.example.genovagreen.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
 </navigation>

@@ -13,7 +13,8 @@
         <item
             android:id="@+id/nav_butto"
             android:icon="@drawable/ic_trash"
-            android:title="@string/dove_lo_butto" />
+            android:title="@string/dove_lo_butto"
+            android:onClick=""/>
         <item
             android:id="@+id/nav_pericolosi"
             android:icon="@drawable/ic_pericolo"
